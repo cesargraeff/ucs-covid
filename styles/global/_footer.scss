@@ -1,0 +1,31 @@
+footer{
+    background: #EAEAEA;
+    height: 65px;
+    ul li{
+        position: relative;
+        text-align: center;
+        i{
+            display: block;
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+        .badge{
+            background: #F00;
+            color: #FFF;
+            font-weight: bold;
+            border-radius: 100%;
+            position: absolute;
+            top: 10px;
+            right: 50%;
+            margin-right: -20px;
+            padding: 1px 4px;
+        }
+        &.active{
+            i, p{
+                color: $color-accent;
+            }
+        }
+    }
+}

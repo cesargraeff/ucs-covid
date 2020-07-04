@@ -1,0 +1,27 @@
+.page{
+    background: #EAEAEA;
+}
+
+.action, .form-cadastro{
+    padding: 30px;
+    color: #3333;
+    p{
+        font-weight: bold;
+        padding: 20px 0;
+    }
+}
+
+
+.form-cadastro{
+    background: #CCCC;
+    overflow-y: scroll;
+    input{
+        margin-bottom: 20px;
+    }
+    p{
+        color: #3333;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+}

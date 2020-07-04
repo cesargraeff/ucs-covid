@@ -1,0 +1,16 @@
+header {
+    @include flex-row;
+    @include flex-row-center;
+    width: 100%;
+    height: 58px;
+    padding: 0 16px;
+    overflow: hidden;
+    i{
+        color: #FFF;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    p{
+       color: #FFF; 
+    }
+}

@@ -1,0 +1,92 @@
+.input {
+    width: 100%;
+    position: relative;
+
+    label, label span {
+        display: block;
+        color: #999;
+        font-size: $font-size;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &.white{
+        label{
+            color: #FFF;
+        }
+        input{
+            color: #FFF;
+        }
+    }
+
+    &.small{
+        label{
+            font-size: $font-caption;
+        }
+        input[type='text'], input[type='search'], input[type='number'], input[type='password'], input[type='email'], input[type='date'], select, textarea{
+            font-size: $font-caption;
+            margin-top: $font-caption + $grid-padding;
+        }
+    }
+
+    &.error {
+        input[type='text'], input[type='search'], input[type='number'], input[type='password'], input[type='email'], input[type='date'], select, textarea {
+            border-bottom: 2px solid $color-error;
+            padding-bottom: $grid-padding;
+        }
+
+        label {
+            color: $color-error !important;
+        }
+
+        span {
+            color: $color-error;
+        }
+    }
+
+    &.alert {
+        input[type='text'], input[type='search'], input[type='number'], input[type='password'], input[type='email'], input[type='date'], select, textarea {
+            border-bottom: 2px solid $color-alert;
+            padding-bottom: $grid-padding;
+        }
+
+        label {
+            color: $color-alert !important;
+        }
+
+        span {
+            color: $color-alert;
+        }
+    }
+
+    input[type='text'], input[type='search'], input[type='number'], input[type='password'], input[type='email'], input[type='date'], select, textarea {
+        margin-top: $font-size + $grid-padding;
+        width: 100%;
+        padding: $grid-padding;
+        border: none;
+        border-bottom: 1px solid #CCCCCC;
+        padding-bottom: $grid-padding + 1;
+        margin-bottom: $grid-padding;
+        background: transparent;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+
+        &[readonly]{
+            border-bottom: 0;
+        }
+
+        &.no-label {
+            margin-top: 0 !important;
+        }
+    }
+
+    input:focus, select:focus, textarea:focus {
+        border-bottom: 2px solid $color-primary;
+        padding-bottom: $grid-padding;
+
+        & ~ label {
+            color: $color-primary;
+        }
+    }
+}

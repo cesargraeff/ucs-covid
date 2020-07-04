@@ -1,0 +1,43 @@
+<div class="vertical-content page">
+  <div class="col text-center col-center">
+    <div class="row row-center" style="height: 100%;">
+      <div class="col logo">
+        <img src="assets/coronavirus.png" width="120" />
+      </div>
+    </div>
+  </div>
+
+
+  <div class="login text-center">
+    <p>Informe seus dados abaixo</p>
+
+    <p style="margin: 10px 0; font-weight: bold; color: #F00;" *ngIf="error">{{error}}</p>
+
+    <div class="input">
+      <input type="text" id="email" [(ngModel)]="login.usuario" />
+      <label for="email">Email</label>
+    </div>
+    <div class="input">
+      <input type="password" id="senha" [(ngModel)]="login.senha" />
+      <label for="senha">Senha</label>
+    </div>
+    <a class="btn btn-success btn-block" (click)="logar()" >
+      <i class="material-icons">exit_to_app</i>
+      Login
+    </a>
+
+    <br>
+      <a [routerLink]="['/esqueci']">
+        Esqueci minha senha
+      </a>
+    <br>
+    <br>
+    
+    <a class="btn btn-info btn-block" [routerLink]="['/cadastro']" >
+      <i class="material-icons">person</i>
+      Não possui cadastro?
+    </a>
+  </div>
+
+
+</div>

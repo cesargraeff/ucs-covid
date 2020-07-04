@@ -1,0 +1,85 @@
+.vertical-content{
+    @include flex-col;
+    @include flex-row;
+    @include flex-vertical;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-container{
+    @include flex-col;
+    width: 100%;
+    padding: 15px;
+    padding-top: 0;
+    overflow-y: scroll;
+    > .card {
+        height: 100%;
+    }
+}
+
+.scrool-container{
+    @include flex-col;
+    width: 100%;
+    padding: 15px;
+    padding-top: 0;
+    overflow-y: scroll;
+    .card{
+        margin-bottom: 15px;
+    }
+}
+
+.card{
+    @include flex-col;
+    @include flex-row;
+    @include flex-vertical;
+    @include z-depth-1;
+    width: 100%;
+    background: #FFF;
+    border-radius: 5px;
+    overflow: hidden;
+
+    .card-header, .card-footer{
+        @include flex-row;
+        @include flex-row-center;
+        text-align: center;
+        padding: 10px 15px;
+        background: rgba(0,0,0,0.05);
+        i{
+            float: left;
+            font-size: inherit;
+            margin-right: 10px;
+        }
+    }
+    .card-header{
+        font-weight: bold;
+    }
+    .card-footer{
+        &.actions{
+            padding: 0;
+        }
+    }
+    .card-body{
+        @include flex-col;
+        padding: $grid-padding;
+        overflow-y: scroll;
+    }
+}
+
+
+
+ul.list {
+    list-style: none;
+    width: 100%;
+
+    li {
+        i:first-child{
+            margin-right: 10px;
+            font-size: 30px;
+        }
+        padding: 8px;
+        border-bottom: 1px solid #DDD;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}

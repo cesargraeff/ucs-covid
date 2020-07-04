@@ -1,0 +1,30 @@
+.page{
+    background: #EAEAEA;
+}
+
+.action, .form-questionario{
+    padding: 30px;
+    color: #333333;
+    p{
+        font-weight: bold;
+        padding: 20px 0;
+    }
+}
+
+.form-questionario{
+    background: #CCCC;
+    overflow-y: scroll;
+    input{
+        margin-bottom: 20px;
+    }
+    p{
+        color: #333333 !important;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+}
+
+input{
+    margin-right: 5px;
+}

@@ -1,0 +1,155 @@
+.btn-icon {
+    padding: 8px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 6px;
+    box-sizing: content-box;
+    -webkit-tap-highlight-color: transparent;
+
+    .material-icons {
+        float: left;
+    }
+}
+
+.btn, .btn-flat {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    outline: 0;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+
+    i{
+        float: left;
+    }
+
+    &:disabled {
+        opacity: 0.8;
+    }
+}
+
+.btn-flat {
+    box-shadow: none;
+    background-color: transparent !important;
+    color: #333;
+    cursor: pointer;
+    text-align: center;
+
+    &.disabled {
+        color: lighten(#999, 10%);
+        cursor: default;
+    }
+
+    i {
+        color: inherit;
+    }
+
+    &.btn-alert {
+        color: $color-alert;
+    }
+
+    &.btn-info {
+        color: $color-info;
+    }
+
+    &.btn-success {
+        color: $color-success;
+    }
+
+    &.btn-error {
+        color: $color-error;
+    }
+
+    &.btn-accent {
+        color: $color-accent;
+    }
+}
+
+.btn {
+    @include z-depth-1;
+    text-decoration: none;
+    color: #FFF;
+    background-color: $color-primary;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten($color-primary, 5%);
+    }
+
+    i {
+        color: inherit;
+    }
+}
+
+.btn-alert {
+    color: #999;
+    background: $color-alert;
+
+    &:hover {
+        background-color: lighten($color-alert, 5%);
+    }
+}
+
+.btn-info {
+    color: #FFF;
+    background: $color-info;
+
+    &:hover {
+        background-color: lighten($color-info, 5%);
+    }
+}
+
+.btn-error {
+    color: #FFF;
+    background: $color-error;
+
+    &:hover {
+        background-color: lighten($color-error, 5%);
+    }
+}
+
+.btn-success {
+    color: #FFF;
+    background: $color-success;
+
+    &:hover {
+        background-color: lighten($color-success, 5%);
+    }
+}
+
+.btn-accent {
+    color: #FFF;
+    background: $color-accent;
+
+    &:hover {
+        background-color: lighten($color-accent, 5%);
+    }
+}
+
+.btn-large {
+    height: 36px * 1.5;
+    line-height: 56px;
+
+    i {
+        font-size: 1.3rem;
+    }
+}
+
+.btn, .btn-large, .btn-flat {
+    i {
+        font-size: 1.3rem;
+        line-height: inherit;
+    }
+}
+
+.btn-block {
+    display: block;
+}
